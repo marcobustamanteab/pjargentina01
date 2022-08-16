@@ -18,15 +18,5 @@
     </div>
 </section>
 {% endfor %}
-<section>
-    <!-- div redimensionado para que no ocupe el 100% del ancho de la pagina-->
-    <div style="width:50%; margin: auto ; text-align:center; color:white">
-        Categorías:
-        {% for post in posts %}
-        {% for categoria in post.categorias.all %}
-        {{categoria.nombre}}
-        {% endfor %}
-        {% endfor %}
-    </div>
-</section>
+
 {% endblock %}
