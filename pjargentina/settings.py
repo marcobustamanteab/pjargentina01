@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'pjwebarg',
     'servicios',
     'blog',
-    'contacto'
+    'contacto',
 ]
 
 MIDDLEWARE = [
