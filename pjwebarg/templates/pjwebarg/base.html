@@ -20,14 +20,15 @@
       <p>Bootstrap es el más popular HTML, CSS...</p>
     </div>
   </div> -->
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
+  <h1 class="site-heading text-center d-none d-lg-block d-inline">
+    <img class="site-img-header" src="{% static 'pjwebarg/img/logo-color.png' %}" alt="">
     <span class="site-heading-upper">Sistema Gestión Comercial</span>
   </h1>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Gestión de
-        Pedidos</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="{% url 'Home' %}">Sistema
+        Gestión Comercial</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +44,7 @@
           <li class="nav-item {% if request.path == '/tienda/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Tienda' %}">Tienda</a>
           </li>
-          <li class="nav-item {% if request.path == '/contacto/' %}active{% endif %} px-lg-4">
+          <li class="nav-item {% if request.path == '/contactos/' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'Contacto' %}">Contacto</a>
           </li>
           <li class="nav-item {% if request.path == '/blog/' %}active{% endif %} px-lg-4">
@@ -54,54 +55,86 @@
     </div>
   </nav>
 
-<!-- Contenido de página-->
-{% block content %}
+  <!-- Contenido de página-->
+  {% block content %}
 
-{% endblock %}
-
-  <!-- Footer -->
-  <footer class="footer text-faded text-center py-5">
-    <div class="container">
-      <p class="m-0">
-        <a href="#" class="link">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        <a href="#" class="link">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-        <a href="#" class="link">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </p>
-      <p class="m-0 mbt">
-        <a href="sample.html" class="link">Política de privacidad</a> ·
-        <a href="sample.html" class="link">Aviso legal</a> ·
-        <a href="sample.html" class="link">CCU 2022</a>
-      </p>
-      <p class="m-0 mbt1">&copy; Sistema Gestión Comercial 2022</p>
+  {% endblock %}
+  <section>
+        <div
+          class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-93aacf2 last-col-colorbar"
+          data-id="93aacf2" data-element_type="column"
+          data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+          <div class="elementor-column-wrap elementor-element-populated">
+            <div class="elementor-widget-wrap">
+              <div class="elementor-element elementor-element-53462ca elementor-widget elementor-widget-spacer"
+                data-id="53462ca" data-element_type="widget" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                  <div class="elementor-spacer">
+                    <div class="elementor-spacer-inner"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
-  <!--Revisar Swal-->
-  <script type="text/javascript" src="{% static 'pjwebarg/vendor/swal.js' %}"></script>
-  <!--js-->
-  <script src="{% static 'pjwebarg/vendor/jquery/jquery.min.js' %}"></script>
-  <!-- Bootstrap -->
-  <script src="{% static 'pjwebarg/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-  <!--sweetAlert-->
-  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="sweetalert2.all.min.js"></script>
-  <script src="sweetalert2.min.js"></script>
+  </section>
+  <hr width="100%" align="center" color="green">
 
-</body>
+  <body class="d-flex flex-column min-vh-100">
+    <footer class="text-center mt-auto" style="color: black;">
+      <div class="container p-3">
+        <section class="">
+          <div class="row" style="text-align: left;">
+            <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
+              <img src="{% static 'pjwebarg/img/logo_footer.png' %}" alt="">
+              <h5 class="text-uppercase footer-font-title" font-size: 15px;" style="padding-top: 30px;">CONTACTANOS</h5>
+              <p class="footer-font-content">
+                CONTACTANOS
+                “CCU” es una marca registrada de CCU.
+                Edison 2669 Piso 1. Martinez (1640)
+                San Isidro, Buenos Aires, Argentina
+              </p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3 mb-md-0 ">
+              <h5 class="text-uppercase footer-font-title" style="padding-bottom: 30px;">CONTÁCTANOS</h5>
+              <a href="!#">atencionalconsumidor@ccu.com.ar</a>
+              <p class="footer-font-content">
+                0800-888-2427</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
+              <h5 class="text-uppercase footer-font-title" style="padding-bottom:30px;">SEGUINOS</h5>
+              <section class=" mb-4 footer-font-content">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                    class="fab fa-github"></i></a>
+              </section>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="text-center p-1" style="text-align: left; color: rgba(0, 0, 0, 0.911);">
+        © 2022. CCU S.A. Todos los derechos reservados.
+      </div>
+    </footer>
+    <!--Revisar Swal-->
+    <script type="text/javascript" src="{% static 'pjwebarg/vendor/swal.js' %}"></script>
+    <!--js-->
+    <script src="{% static 'pjwebarg/vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Bootstrap -->
+    <script src="{% static 'pjwebarg/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!--sweetAlert-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="sweetalert2.min.js"></script>
+
+  </body>
 
 
 </html>
