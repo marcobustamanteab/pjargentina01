@@ -14,12 +14,6 @@
 </head>
 
 <body>
-  <!-- <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1>Bootstrap Tutorial</h1>
-      <p>Bootstrap es el más popular HTML, CSS...</p>
-    </div>
-  </div> -->
   <h1 class="site-heading text-center d-none d-lg-block d-inline">
     <img class="site-img-header" src="{% static 'pjwebarg/img/logo-color.png' %}" alt="">
     <span class="site-heading-upper">Sistema Gestión Comercial</span>
@@ -60,24 +54,24 @@
 
   {% endblock %}
   <section>
-        <div
-          class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-93aacf2 last-col-colorbar"
-          data-id="93aacf2" data-element_type="column"
-          data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-          <div class="elementor-column-wrap elementor-element-populated">
-            <div class="elementor-widget-wrap">
-              <div class="elementor-element elementor-element-53462ca elementor-widget elementor-widget-spacer"
-                data-id="53462ca" data-element_type="widget" data-widget_type="spacer.default">
-                <div class="elementor-widget-container">
-                  <div class="elementor-spacer">
-                    <div class="elementor-spacer-inner"></div>
-                  </div>
-                </div>
+    <div
+      class="elementor-column elementor-col-20 elementor-top-column elementor-element elementor-element-93aacf2 last-col-colorbar"
+      data-id="93aacf2" data-element_type="column"
+      data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+      <div class="elementor-column-wrap elementor-element-populated">
+        <div class="elementor-widget-wrap">
+          <div class="elementor-element elementor-element-53462ca elementor-widget elementor-widget-spacer"
+            data-id="53462ca" data-element_type="widget" data-widget_type="spacer.default">
+            <div class="elementor-widget-container">
+              <div class="elementor-spacer">
+                <div class="elementor-spacer-inner"></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   </section>
   <hr width="100%" align="center" color="green">
@@ -89,7 +83,7 @@
           <div class="row" style="text-align: left;">
             <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
               <img src="{% static 'pjwebarg/img/logo_footer.png' %}" alt="">
-              <h5 class="text-uppercase footer-font-title" font-size: 15px;" style="padding-top: 30px;">CONTACTANOS</h5>
+              <h5 class="text-uppercase footer-font-title" style="padding-top: 30px; font-size: 16px;">CONTACTANOS</h5>
               <p class="footer-font-content">
                 CONTACTANOS
                 “CCU” es una marca registrada de CCU.
@@ -99,22 +93,18 @@
             </div>
             <div class="col-lg-4 col-md-6 mb-3 mb-md-0 ">
               <h5 class="text-uppercase footer-font-title" style="padding-bottom: 30px;">CONTÁCTANOS</h5>
-              <a href="!#">atencionalconsumidor@ccu.com.ar</a>
+              <a href="!#" style="font-size: 13px;">atencionalconsumidor@ccu.com.ar</a>
               <p class="footer-font-content">
                 0800-888-2427</p>
             </div>
             <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
               <h5 class="text-uppercase footer-font-title" style="padding-bottom:30px;">SEGUINOS</h5>
-              <section class=" mb-4 footer-font-content">
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-instagram"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
-                    class="fab fa-github"></i></a>
-              </section>
+                <div class="btn-frame">
+                  <a class="btn m-1" href="https://www.facebook.com/CCU-Argentina-103956628077457/" target="_blank" role="button"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>
+                  <a class="btn m-1" href="https://www.instagram.com/ccu.argentina/" target="_blank" role="button"><i class="fab fa-instagram" style="color:#ee4056;"></i></a>
+                  <a class="btn m-1" href="https://www.youtube.com/user/ccuargentina" target="_blank" role="button"><i class="fab fa-youtube" style="color:#e51414;"></i></a>
+                  <a class="btn m-1" href="{% url 'Contacto' %}" role="button"><i class="far fa-envelope"></i></a>
+                </div>
             </div>
           </div>
         </section>
@@ -133,7 +123,13 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="sweetalert2.all.min.js"></script>
     <script src="sweetalert2.min.js"></script>
-
+    <!--icons-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+      integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+      crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"></script>
   </body>
 
 
