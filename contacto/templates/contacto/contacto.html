@@ -3,13 +3,13 @@
 {% block content %}
 <div class="contenedorFormulario">
     {% if "valido" in request.GET %}
-    <p  style="color:white;">Mensaje enviado, Muchas Gracias!</p>
-    <button onclick="showAlert()">Test Swal</button>
+    <p style="color:white;">Mensaje enviado, Muchas Gracias!</p>
+    <button id="btn1"></button>
     {% endif %}
     <form action="" method="POST" style="text-align: center;">
         {% csrf_token %}
         <table style="color:white; margin: 20px auto;">{{miFormulario.as_table}}</table>
-        <input onclick="showAlert()" type="submit" value="enviar" style="width:190px;">
+        <input type="submit" value="enviar" style="width:190px;">
     </form>
 </div>
 

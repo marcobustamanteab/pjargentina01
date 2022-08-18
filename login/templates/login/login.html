@@ -1,0 +1,15 @@
+{% extends "pjwebarg/base.html" %}
+{% load static %}
+{% block content %}
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" action="/userlogin/" method="POST"> {% csrf_token %}
+            <p>SISTEMA GESTIÓN COMERCIAL</p>
+            <input type="text" placeholder="correo" />
+            <input type="password" placeholder="contraseña" />
+            <button type="submit">Ingresar</button>
+            <p class="message">No estás registrado? <a href="#">Crear una cuenta</a></p>
+        </form>
+    </div>
+</div>
+{% endblock %}

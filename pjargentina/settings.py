@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pjwebarg',
-    'servicios',
     'blog',
     'contacto',
+    'login',
 ]
 
 MIDDLEWARE = [

@@ -7,3 +7,4 @@ const showAlert = () => {
         timer: 1500
     })
 }
+
