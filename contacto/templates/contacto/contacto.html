@@ -2,17 +2,6 @@
 {% load static %}
 {% block content %}
 <div class="contenedorFormulario">
-    <script>
-        const showAlert = () => {
-            Swal.fire({
-                position: 'top-end',
-                icon: 'success',
-                title: 'Su información ha sido enviada con éxito',
-                showConfirmButton: false,
-                timer: 1500
-            })
-        }
-    </script>
     {% if "valido" in request.GET %}
     <p  style="color:white;">Mensaje enviado, Muchas Gracias!</p>
     <button onclick="showAlert()">Test Swal</button>

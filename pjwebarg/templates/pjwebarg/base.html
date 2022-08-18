@@ -48,7 +48,32 @@
       </div>
     </div>
   </nav>
-
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="{% static 'pjwebarg/img/carousel01.jpg' %}" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'pjwebarg/img/carousel02.jpg' %}" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="{% static 'pjwebarg/img/carousel03.jpg' %}" alt="Third slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
   <!-- Contenido de página-->
   {% block content %}
 
@@ -92,29 +117,34 @@
               </p>
             </div>
             <div class="col-lg-4 col-md-6 mb-3 mb-md-0 ">
-              <h5 class="text-uppercase footer-font-title" style="padding-bottom: 30px;">CONTÁCTANOS</h5>
+              <h5 class="text-uppercase footer-font-title" style="padding-bottom: 30px;">CONTACTANOS</h5>
               <a href="!#" style="font-size: 13px;">atencionalconsumidor@ccu.com.ar</a>
               <p class="footer-font-content">
                 0800-888-2427</p>
             </div>
             <div class="col-lg-4 col-md-6 mb-3 mb-md-0">
               <h5 class="text-uppercase footer-font-title" style="padding-bottom:30px;">SEGUINOS</h5>
-                <div class="btn-frame">
-                  <a class="btn m-1" href="https://www.facebook.com/CCU-Argentina-103956628077457/" target="_blank" role="button"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>
-                  <a class="btn m-1" href="https://www.instagram.com/ccu.argentina/" target="_blank" role="button"><i class="fab fa-instagram" style="color:#ee4056;"></i></a>
-                  <a class="btn m-1" href="https://www.youtube.com/user/ccuargentina" target="_blank" role="button"><i class="fab fa-youtube" style="color:#e51414;"></i></a>
-                  <a class="btn m-1" href="{% url 'Contacto' %}" role="button"><i class="far fa-envelope"></i></a>
-                </div>
+              <div class="btn-frame">
+                <a class="btn m-1" href="https://www.facebook.com/CCU-Argentina-103956628077457/" target="_blank"
+                  role="button"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a>
+                <a class="btn m-1" href="https://www.instagram.com/ccu.argentina/" target="_blank" role="button"><i
+                    class="fab fa-instagram" style="color:#ee4056;"></i></a>
+                <a class="btn m-1" href="https://www.youtube.com/user/ccuargentina" target="_blank" role="button"><i
+                    class="fab fa-youtube" style="color:#e51414;"></i></a>
+                <a class="btn m-1" href="{% url 'Contacto' %}" role="button"><i class="far fa-envelope"></i></a>
+              </div>
             </div>
+          </div>
+          <div class="p-1" style="text-align: left; color: black; text-decoration:solid; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 11px;">
+            © 2022. CCU S.A. Todos los derechos reservados.
           </div>
         </section>
       </div>
-      <div class="text-center p-1" style="text-align: left; color: rgba(0, 0, 0, 0.911);">
-        © 2022. CCU S.A. Todos los derechos reservados.
-      </div>
     </footer>
+
+
     <!--Revisar Swal-->
-    <script type="text/javascript" src="{% static 'pjwebarg/vendor/swal.js' %}"></script>
+    <script type="text/javascript" src="{% static 'pjwebarg/vendor/jquery/swal.js' %}"></script>
     <!--js-->
     <script src="{% static 'pjwebarg/vendor/jquery/jquery.min.js' %}"></script>
     <!-- Bootstrap -->
